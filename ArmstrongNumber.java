@@ -19,7 +19,7 @@ public class ArmstrongNumber {
 	public static void main(String[] args) {
 
 		// Declare your input
-		int val = 153;
+		int val = 152;
 
 		// Declare 3 more int variables as calculated, remainder, original (Tip:
 		// Initialize calculated alone)
@@ -45,8 +45,8 @@ public class ArmstrongNumber {
 
 			// Within loop: Add calculated with the cube of remainder & assign it to
 			// calculated
-			  calculated += calculated + remainder*remainder*remainder;
-			calculated=	remainder;
+			  calculated = calculated +( remainder*remainder*remainder);
+			remainder=calculated;
 
 		// Check whether calculated and original are same
 
